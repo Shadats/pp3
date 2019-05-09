@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang=" {{ str_replace('_','-',app()->getLocale()) }}">
+<html>
+ 
 <head>
     <title></title>
 </head>
 <body>
-    <div id="appp">
+
+    <div id="app">
         @{{$data}}
-        <script scr="{{asset('js/app.js')}}"></script>
+       
     </div>
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 
 </html>
